@@ -26,6 +26,9 @@ public class HelloResponseController {
     @GetMapping("/html/templates")
     public String htmlTemplates() {
         return "hello";
+        //return 값 String을 View name으로 전달함 (타임리프 설정)
+        //prefic: classpath:/templates/
+        //suffic: .html
     }
 
     // [Response header]
@@ -37,7 +40,7 @@ public class HelloResponseController {
 // <body>Hello, Spring 정적 웹 페이지!!</body>
 // </html>
     @GetMapping("/body/html")
-    @ResponseBody
+    @ResponseBody //return하는 String을 Body에 채워라, View를 통하지 않는다
     public String helloStringHTML() {
         return "<!DOCTYPE html>" +
                 "<html>" +
@@ -66,7 +69,7 @@ public class HelloResponseController {
 // {"name":"BTS","age":28}
     @GetMapping("/json/string")
     @ResponseBody
-    public String helloStringJson() {
+    public String helloStringJson() { // return이 String이기 때문에 text/html
         return "{\"name\":\"BTS\",\"age\":28}";
     }
 
@@ -76,7 +79,7 @@ public class HelloResponseController {
 // {"name":"BTS","age":28}
     @GetMapping("/json/class")
     @ResponseBody
-    public Star helloJson() {
+    public Star helloJson() {       // return이 String이 아니기때문에 json으로 알아서 변환
         return new Star("BTS", 28);
     }
 }
