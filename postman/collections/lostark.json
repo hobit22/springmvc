@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "4e718cb0-9f64-442d-af68-71a263c4d915",
+		"name": "lostark",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "22612972-4e718cb0-9f64-442d-af68-71a263c4d915"
+	},
+	"item": [
+		{
+			"name": "test",
+			"id": "27452312-60d1-44cb-a202-204256358094",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy",
+			"id": "465101ef-d023-4e00-8439-a8ed3cec9bc9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test Copy 2",
+			"id": "14118161-88f8-4263-9299-61f55a12288f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
